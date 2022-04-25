@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\BackendController;
 use App\Http\Controllers\Frontend\FrontendController;
@@ -14,6 +15,6 @@ Route::get('/admin/login', [BackendController::class , 'login'])->name('backend.
 Route::get('/admin/forgot-password', [BackendController::class , 'forgot_password'])->name('backend.forgot_password');
 Route::get('/admin', [BackendController::class , 'index'])->name('backend.index');
 
-// Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

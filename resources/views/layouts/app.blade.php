@@ -79,7 +79,7 @@
                                 <a class="nav-link" href="#"> <i class="far fa-heart mr-1"></i><small class="text-gray"> (0)</small></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('backend.login') }}"> <i class="fas fa-user-alt mr-1 text-gray"></i>Login</a>
+                                <a class="nav-link" href="{{ route('login') }}"> <i class="fas fa-user-alt mr-1 text-gray"></i>Login</a>
                             </li>
                         </ul>
                     </div>
