@@ -25,8 +25,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <label class="text-small text-uppercase" for="username">Username</label>
-                                <input class="form-control form-control-lg" name="username" type="text" value="{{ old('username') }}" placeholder="Enter your first name">
+                                <label class="text-small text-uppercase" for="username">Username or Email</label>
+                                <input class="form-control form-control-lg" name="username" type="text" value="{{ old('username') }}" placeholder="Enter your Username or Email">
                                 @error('username')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
                         </div>

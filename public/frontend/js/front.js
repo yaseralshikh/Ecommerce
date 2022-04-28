@@ -69,12 +69,12 @@ $(function () {
 /* ===============================================================
      COUNTRY SELECT BOX FILLING
   =============================================================== */
-$.getJSON('js/countries.json', function (data) {
-    $.each(data, function (key, value) {
-        var selectOption = "<option value='" + value.name + "' data-dial-code='" + value.dial_code + "'>" + value.name + "</option>";
-        $("select.country").append(selectOption);
-    });
-})
+// $.getJSON('js/countries.json', function (data) {
+//     $.each(data, function (key, value) {
+//         var selectOption = "<option value='" + value.name + "' data-dial-code='" + value.dial_code + "'>" + value.name + "</option>";
+//         $("select.country").append(selectOption);
+//     });
+// })
 
 // ------------------------------------------------------- //
 //   Inject SVG Sprite -
@@ -105,26 +105,26 @@ injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
      noUiSlider is a lightweight range slider with multi-touch
   =============================================================== */
 
-var range = document.getElementById('range');
-noUiSlider.create(range, {
-    range: {
-        'min': 0,
-        'max': 2000
-    },
-    step: 5,
-    start: [100, 1000],
-    margin: 300,
-    connect: true,
-    direction: 'ltr',
-    orientation: 'horizontal',
-    behaviour: 'tap-drag',
-    tooltips: true,
-    format: {
-        to: function(value) {
-            return '$' + value;
-        },
-        from: function(value) {
-            return value.replace('', '');
-        }
-    }
-});
+// var range = document.getElementById('range');
+// noUiSlider.create(range, {
+//     range: {
+//         'min': 0,
+//         'max': 2000
+//     },
+//     step: 5,
+//     start: [100, 1000],
+//     margin: 300,
+//     connect: true,
+//     direction: 'ltr',
+//     orientation: 'horizontal',
+//     behaviour: 'tap-drag',
+//     tooltips: true,
+//     format: {
+//         to: function(value) {
+//             return '$' + value;
+//         },
+//         from: function(value) {
+//             return value.replace('', '');
+//         }
+//     }
+// });
